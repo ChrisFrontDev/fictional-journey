@@ -71,7 +71,7 @@ const Repository: React.FC = () => {
       <Header>
         <img src={logoImg} alt="Github Explorer" />
 
-        <Link to="/dashboard">
+        <Link to="/">
           <FiChevronLeft />
           Voltar
         </Link>
