@@ -112,7 +112,7 @@ const Repository: React.FC = () => {
         'carregando'
       )}
 
-      {issues.length > 0 ? (
+      {issues && (
         <Issues>
           {issues.map((issue) => (
             <a key={issue.id} href={issue.html_url}>
@@ -126,8 +126,6 @@ const Repository: React.FC = () => {
             </a>
           ))}
         </Issues>
-      ) : (
-        'carregando issues'
       )}
     </>
   );
